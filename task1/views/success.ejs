@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✅ Success - Cognifyz Task 1</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #56ab2f 0%, #a8e6cf 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .success-container {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(15px);
+            padding: 50px 40px;
+            border-radius: 25px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            animation: bounceIn 0.8s ease-out;
+        }
+        @keyframes bounceIn {
+            0% { opacity: 0; transform: scale(0.8); }
+            50% { transform: scale(1.05); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        .checkmark {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #56ab2f, #a8e6cf);
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(86,171,47,0.4);
+        }
+        h1 { color: #2c3e50; margin-bottom: 20px; font-size: 32px; }
+        .data {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+            font-size: 18px;
+        }
+        .data strong { color: #2c3e50; }
+        .btn-back {
+            display: inline-block;
+            padding: 15px 35px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(102,126,234,0.4);
+        }
+        .btn-back:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(102,126,234,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="checkmark">✅</div>
+        <h1>Form Submitted Successfully!</h1>
+        <p style="color: #7f8c8d; font-size: 16px; margin-bottom: 30px;">
+            Your data has been processed by Express + EJS server!
+        </p>
+        
+        <div class="data">
+            <p><strong>Name:</strong> <%= name %></p>
+            <p><strong>Email:</strong> <%= email %></p>
+        </div>
+        
+        <a href="/" class="btn-back">← Submit New Form</a>
+    </div>
+</body>
+</html>

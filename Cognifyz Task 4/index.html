@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cognifyz Task 4 - Advanced Form Validation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cognifyz Task 4 – Registration</h1>
+
+    <nav class="tabs">
+      <button class="tab-button active" data-target="register-section">Register</button>
+      <button class="tab-button" data-target="about-section">About</button>
+    </nav>
+
+    <section id="register-section" class="tab-section active">
+      <form id="registerForm" novalidate>
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" />
+          <small class="error" id="nameError"></small>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" />
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
+          <small class="error" id="phoneError"></small>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+          <small class="error" id="passwordError"></small>
+
+          <div class="password-strength">
+            <p>Password strength: <span id="strengthText">Weak</span></p>
+            <div class="strength-bar">
+              <span id="strengthBar"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" />
+          <small class="error" id="confirmPasswordError"></small>
+        </div>
+
+        <!-- Terms -->
+        <div class="form-group checkbox-group">
+          <label>
+            <input type="checkbox" id="terms" />
+            I agree to the terms and conditions
+          </label>
+          <small class="error" id="termsError"></small>
+        </div>
+
+        <button type="submit" id="submitBtn" disabled>Register</button>
+      </form>
+
+      <div id="successMessage" class="success-message"></div>
+    </section>
+
+    <section id="about-section" class="tab-section">
+      <h2>About Task 4</h2>
+      <p>
+        This task focuses on advanced client-side validation and dynamic DOM
+        updates using plain JavaScript.  
+        Fields are validated live and the UI reacts instantly without page reloads.
+      </p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

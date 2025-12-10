@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #1f2937 0, #020617 55%, #000 100%);
+  color: #f9fafb;
+}
+
+.app {
+  width: 100%;
+  max-width: 760px;
+  background: rgba(15, 23, 42, 0.96);
+  padding: 24px 22px 28px;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #f97316;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  color: #e5e7eb;
+}
+
+h2 {
+  font-size: 1.1rem;
+  color: #22c55e;
+}
+
+/* Sections */
+.create,
+.list,
+.controls {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(55, 65, 81, 0.8);
+}
+
+/* Form */
+#todoForm {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  background: #020617;
+  color: #f9fafb;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+input[type="text"]:focus {
+  border-color: #1d4ed8;
+}
+
+button {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #dc2626, #16a34a, #1d4ed8);
+  background-size: 200% 100%;
+  color: #f9fafb;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: background-position 0.3s, transform 0.1s, opacity 0.15s;
+}
+
+button:hover {
+  background-position: 100% 0;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button.danger {
+  background: linear-gradient(90deg, #b91c1c, #dc2626);
+}
+
+/* Filters + search */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  background: transparent;
+  border-radius: 999px;
+  border: 1px solid #1d4ed8;
+  color: #cbd5f5;
+}
+
+.filter-btn.active {
+  background: linear-gradient(90deg, #1d4ed8, #22c55e);
+  color: #f9fafb;
+  border-color: transparent;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.search input[type="text"] {
+  flex: 1;
+}
+
+#reloadBtn {
+  padding-inline: 10px;
+}
+
+/* List */
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+#loading {
+  margin-top: 8px;
+}
+
+#todoList {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.todo-item {
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #020617;
+  border: 1px solid #374151;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 7px;
+  font-size: 0.9rem;
+}
+
+.todo-item.done {
+  opacity: 0.7;
+}
+
+.todo-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.todo-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.todo-title input[type="checkbox"] {
+  accent-color: #22c55e;
+}
+
+.todo-title span.text {
+  word-break: break-word;
+}
+
+.todo-title input.edit-input {
+  flex: 1;
+  padding: 4px 6px;
+  border-radius: 8px;
+  border: 1px solid #4b5563;
+  background: #020617;
+  color: #f9fafb;
+}
+
+.badge {
+  font-size: 0.7rem;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: #1d4ed8;
+}
+
+.badge.done {
+  background: #16a34a;
+}
+
+.todo-meta {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.todo-actions button {
+  padding: 4px 8px;
+  font-size: 0.75rem;
+}
+
+.todo-actions .delete {
+  background: linear-gradient(90deg, #b91c1c, #ef4444);
+}
+
+.error {
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: #f97316;
+}
+
+.info {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #93c5fd;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .app {
+    margin: 12px;
+    padding: 18px 14px 22px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .todo-item {
+    grid-template-columns: 1fr;
+  }
+
+  .todo-actions {
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cognifyz Task 5 – Advanced API Todo Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Cognifyz Task 5 – API Todo Board</h1>
+      <p class="subtitle">
+        Full CRUD with filters, search, status toggle, and API integration.
+      </p>
+    </header>
+
+    <section class="create">
+      <h2>Add New Todo</h2>
+      <form id="todoForm">
+        <input
+          type="text"
+          id="todoTitle"
+          placeholder="Enter todo title (min 3 characters)"
+        />
+        <button type="submit">Add</button>
+      </form>
+      <small id="formError" class="error"></small>
+    </section>
+
+    <section class="controls">
+      <div class="filters">
+        <label>Filter:</label>
+        <button data-status="all" class="filter-btn active">All</button>
+        <button data-status="pending" class="filter-btn">Pending</button>
+        <button data-status="completed" class="filter-btn">Completed</button>
+      </div>
+
+      <div class="search">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search todos..."
+        />
+        <button id="reloadBtn" title="Reload from API">↻</button>
+      </div>
+    </section>
+
+    <section class="list">
+      <div class="list-header">
+        <h2>Todo List (from API)</h2>
+        <button id="clearCompletedBtn" class="danger">
+          Clear Completed
+        </button>
+      </div>
+
+      <div id="loading" class="info hidden">Loading...</div>
+      <div id="errorBox" class="error hidden"></div>
+
+      <ul id="todoList"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

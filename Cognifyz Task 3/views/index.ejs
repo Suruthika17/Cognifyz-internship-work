@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 3 – Cognifyz Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark shadow-lg">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="#">
+        <i class="fas fa-rocket me-2 text-danger"></i>Cognifyz Dashboard
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section min-vh-100 d-flex align-items-center text-white">
+    <div class="container position-relative">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold animate-hero mb-4">Advanced CSS Dashboard</h1>
+          <p class="lead mb-4 animate-hero-delay">
+            Task 3: Bootstrap responsive layout with dark theme, gradients and animations.
+          </p>
+          <button 
+            class="btn btn-lg me-3 mb-3 btn-pulse" 
+            style="background: #ff4b5c; border: none; color: #fff;">
+            Get Started
+          </button>
+          <button 
+            class="btn btn-lg mb-3"
+            style="background: transparent; border: 2px solid #ff9f1c; color: #ff9f1c;">
+            Learn More
+          </button>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="hero-graphic animate-float">
+            <i class="fas fa-chart-line fa-10x" style="color: #ff9f1c;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="display-5 fw-bold mb-4">Key Features</h2>
+          <p class="lead text-muted">Advanced CSS styling with Bootstrap responsive grid and dark theme.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card h-100 p-4 border-0 shadow-sm hover-lift">
+            <div class="feature-icon mb-3 text-center">
+              <i class="fas fa-mobile-alt fa-3x"></i>
+            </div>
+            <h4 class="fw-bold mb-3 text-center">Fully Responsive</h4>
+            <p class="text-muted">Bootstrap grid works perfectly on mobile, tablet, and desktop.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card h-100 p-4 border-0 shadow-sm hover-lift">
+            <div class="feature-icon mb-3 text-center">
+              <i class="fas fa-magic fa-3x"></i>
+            </div>
+            <h4 class="fw-bold mb-3 text-center">Smooth Animations</h4>
+            <p class="text-muted">CSS transitions, keyframes, and hover effects throughout.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card h-100 p-4 border-0 shadow-sm hover-lift">
+            <div class="feature-icon mb-3 text-center">
+              <i class="fas fa-palette fa-3x"></i>
+            </div>
+            <h4 class="fw-bold mb-3 text-center">Modern Dark Design</h4>
+            <p class="text-muted">Black, dark red, dark blue with green and orange accents.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-5 bg-gradient-primary text-white">
+    <div class="container text-center">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="stat-item">
+            <h2 class="display-4 fw-bold animate-count">3</h2>
+            <p class="h5">Tasks Complete</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-item">
+            <h2 class="display-4 fw-bold animate-count">100%</h2>
+            <p class="h5">Responsive</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-item">
+            <h2 class="display-4 fw-bold animate-count">50+</h2>
+            <p class="h5">CSS Effects</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-item">
+            <h2 class="display-4 fw-bold animate-count">8</h2>
+            <p class="h5">Internship Tasks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-5 bg-black text-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-lg border-0" style="background: #111827; color: #f9fafb;">
+            <div class="card-body p-5">
+              <h3 class="text-center mb-4">Get In Touch</h3>
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control form-control-lg animate-slide-up" placeholder="Your Name">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control form-control-lg animate-slide-up-delay" placeholder="Your Email">
+                  </div>
+                  <div class="col-12">
+                    <textarea class="form-control form-control-lg animate-slide-up-delay2" rows="4" placeholder="Your Message"></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-lg px-5 animate-bounce-in"
+                            style="background: #2ecc71; border: none; color: #fff;">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 Cognifyz Task 3 - Advanced CSS Dashboard. Built with Bootstrap + Custom Dark Theme.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="/css/script.js"></script>
+</body>
+</html>

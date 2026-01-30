@@ -6,9 +6,13 @@ Completed **all 5 Full-Stack Development Tasks** during my **online** Cognifyz T
 
 
 🗃️ Task 1 | HTML forms + Node.js/Express server + EJS server-side rendering | HTML, Node.js, Express, EJS 
+
 🎨 Task 2 | Advanced CSS styling + responsive design + form validation | CSS3, Bootstrap, Client-side validation 
+
 💬 Task 3 | Responsive chatbot interface + dynamic interactions | HTML, CSS, JavaScript, React Router 
+
 🔍 Task 4 | RESTful APIs + MongoDB integration + CRUD operations | Node.js APIs, MongoDB, Frontend fetch
+
 🔐 Task 5 | Authentication + OAuth/JWT security + API integration | Node.js, MongoDB, JWT/OAuth, Public APIs 
 
 ## Tech Stack Used 🛠️
